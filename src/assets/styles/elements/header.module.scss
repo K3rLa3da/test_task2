@@ -1,0 +1,23 @@
+@import '../common_variables';
+
+.offset {
+  height: 10px;
+  background-color: $default_dark_blue;
+}
+
+.content {
+  height: 60px;
+  background-color: $default_blue;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: white;
+  margin: 0 auto;
+  width: $default_container_width;
+  padding: 0 $container_left_padding;
+  span {
+    font-size: 2em;
+  }
+}

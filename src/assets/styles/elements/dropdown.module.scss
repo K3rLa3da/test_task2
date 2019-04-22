@@ -1,0 +1,31 @@
+@import '../common_variables';
+
+%dropdown {
+  height: 30px;
+}
+
+.container{
+  width: 655px;
+  color: $default_grey;
+  div{
+      margin-right: 0  !important;
+    }
+}
+
+.valid {
+  @extend %dropdown;
+}
+
+.error {
+  @extend %dropdown;
+  color: $default_error_color;
+  border-color: $default_error_color;
+}
+
+.field_message{
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 0.6em;
+  justify-content: space-between;
+}

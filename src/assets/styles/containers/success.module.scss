@@ -1,0 +1,12 @@
+@import '../common_variables';
+
+.container {
+  background-color: #f1fcf3;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  margin-top: 2em;
+  width: 150px;
+}

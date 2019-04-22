@@ -1,0 +1,20 @@
+@import '../common_variables';
+
+%label {
+  font-size: 0.8em;
+  width: 200px;
+
+  span {
+    color: $default_error_color
+  }
+}
+
+.valid {
+  @extend %label;
+  color: $default_blue;
+}
+
+.error {
+  @extend %label;
+  color: $default_error_color
+}

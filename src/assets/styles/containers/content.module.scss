@@ -1,0 +1,15 @@
+@import '../common_variables';
+
+.container {
+  width: $default_container_width;
+  background-color: #fff;
+  color: $default_grey;
+  margin: 1em auto 0;
+  padding: $container_top_padding $container_left_padding;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+.header {
+  font-size: 1.2em;
+  color: $default_blue;
+}

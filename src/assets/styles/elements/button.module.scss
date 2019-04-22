@@ -1,0 +1,10 @@
+@import '../common_variables';
+
+.button {
+  height: 45px;
+  border: 1px solid $default_button_color;
+  background-color: $default_button_color;
+  cursor: pointer;
+  border-radius: 2%;
+  color: white;
+}

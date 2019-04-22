@@ -1,0 +1,34 @@
+@import '../common_variables';
+
+%input {
+  height: 30px;
+  border: 1px solid $default_light_grey;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 0.9em;
+  padding-left: 2px;
+  color: $default_grey;
+  &::placeholder {
+    color: $default_light_grey;
+    padding-left: 2px;
+  }
+}
+
+.container{
+  display: block;
+}
+
+.valid {
+  @extend %input;
+}
+
+.error {
+  @extend %input;
+  color: $default_error_color;
+  border-color: $default_error_color;
+}
+
+::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}

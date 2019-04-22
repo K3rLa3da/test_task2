@@ -1,0 +1,41 @@
+@import '../common_variables';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 1em;
+  width: 100%;
+  min-height: 35px;
+  div{
+    &:not(:first-child) {
+      margin-right: 15px;
+    }
+  }
+}
+
+.top {
+  align-items: flex-start;
+}
+
+.errorMessage {
+  display: block;
+  position: relative;
+  background: $default_error_color;
+  border: 1px solid $default_error_color;
+  padding: 2px 5px;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.8em;
+}
+
+.errorMessage:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent $default_error_color transparent transparent;
+}
